@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Diary</string>
+    <string name="checklist">Checklist</string>
+    <string name="shopping_list">Shopping</string>
+    <string name="habits_tracker">Habits</string>
+    <string name="notes">Notes</string>
+    <string name="calendar">Calendar</string>
 </resources>

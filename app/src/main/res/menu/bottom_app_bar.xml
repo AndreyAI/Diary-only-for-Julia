@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/checkList"
+        android:contentDescription="@string/checklist"
+        android:icon="@drawable/ic_checklist"
+        android:title="@string/checklist" />
+
+    <item
+        android:id="@+id/shoppingList"
+        android:contentDescription="@string/shopping_list"
+        android:icon="@drawable/ic_shopping"
+        android:title="@string/shopping_list" />
+
+    <item
+        android:id="@+id/calendar"
+        android:title=""
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/habitsTracker"
+        android:contentDescription="@string/habits_tracker"
+        android:icon="@drawable/ic_habitstracker"
+        android:title="@string/habits_tracker"/>
+
+    <item
+        android:id="@+id/notes"
+        android:contentDescription="@string/notes"
+        android:icon="@drawable/ic_notes"
+        android:title="@string/notes" />
+
+</menu>
