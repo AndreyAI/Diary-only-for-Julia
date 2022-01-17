@@ -7,6 +7,7 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.google.android.material.navigation.NavigationBarView
 import com.pet.diary.R
 import com.pet.diary.databinding.FragmentMainBinding
+import com.pet.diary.presentation.calendar.CalendarFragment
 
 
 class MainFragment : Fragment(R.layout.fragment_main) {
@@ -15,34 +16,41 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.bottomNavigationView.background = null // why work only dynamically? if xml not working
+
+        binding.bottomNavigationView.background =
+            null // why work only dynamically? if xml not working
+
+        childFragmentManager.beginTransaction()
+            .add(R.id.fragmentContainer, CalendarFragment(), "calendar") // companion object
+           // .show(CalendarFragment())
+            .commit()
+
+
+
+    }
+
+    private fun listenersInit(){
         binding.fab.setOnClickListener {
-            binding.bottomNavigationView.labelVisibilityMode = NavigationBarView.LABEL_VISIBILITY_UNLABELED
+            binding.bottomNavigationView.selectedItemId = R.id.calendar
         }
 
-
         binding.bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-            binding.bottomNavigationView.labelVisibilityMode = NavigationBarView.LABEL_VISIBILITY_UNLABELED
-            binding.bottomNavigationView.labelVisibilityMode = NavigationBarView.LABEL_VISIBILITY_SELECTED
+            binding.bottomNavigationView.labelVisibilityMode =
+                NavigationBarView.LABEL_VISIBILITY_SELECTED
             when (item.itemId) {
                 R.id.checkList -> {
-                    // Respond to navigation item 1 click
                     true
                 }
                 R.id.shoppingList -> {
-                    // Respond to navigation item 2 click
                     true
                 }
                 R.id.habitsTracker -> {
-                    // Respond to navigation item 1 click
                     true
                 }
                 R.id.notes -> {
-                    // Respond to navigation item 2 click
                     true
                 }
                 else -> false
-
             }
         }
     }

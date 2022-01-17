@@ -5,4 +5,5 @@
     <string name="habits_tracker">Habits</string>
     <string name="notes">Notes</string>
     <string name="calendar">Calendar</string>
+    <string name="search">Search</string>
 </resources>
