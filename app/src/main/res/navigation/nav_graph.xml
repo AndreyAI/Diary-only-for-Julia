@@ -9,5 +9,27 @@
         android:id="@+id/mainFragment"
         android:name="com.pet.diary.presentation.main.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.pet.diary.presentation.calendar.CalendarFragment"
+        android:label="CalendarFragment"
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/action_calendarFragment_to_monthFragment"
+            app:destination="@id/monthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthFragment"
+        android:name="com.pet.diary.presentation.calendar.month.MonthFragment"
+        android:label="MonthFragment"
+        tools:layout="@layout/fragment_month">
+        <argument
+            android:name="activePeriod"
+            app:argType="string" />
+    </fragment>
 </navigation>

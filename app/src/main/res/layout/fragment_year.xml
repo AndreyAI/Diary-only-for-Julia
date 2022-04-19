@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarJanuary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/calendarFebruary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarFebruary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/calendarMarch"
+            app:layout_constraintStart_toEndOf="@id/calendarJanuary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarMarch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/calendarFebruary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarApril"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/calendarMay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarMay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/calendarJune"
+            app:layout_constraintStart_toEndOf="@id/calendarApril"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarJune"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/calendarMay"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarJuly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/calendarAugust"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarAugust"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/calendarSeptember"
+            app:layout_constraintStart_toEndOf="@id/calendarJuly"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarSeptember"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/calendarAugust"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarOctober"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/calendarNovember"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarNovember"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/calendarDecember"
+            app:layout_constraintStart_toEndOf="@id/calendarOctober"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarDecember"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/calendarNovember"
+            app:layout_constraintTop_toTopOf="parent"
+            app:swipeEnabled="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

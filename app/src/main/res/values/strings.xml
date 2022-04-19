@@ -6,4 +6,12 @@
     <string name="notes">Notes</string>
     <string name="calendar">Calendar</string>
     <string name="search">Search</string>
+    <string name="year">Year</string>
+    <string name="week">week</string>
+    <string name="schedule">schedule</string>
+    <string name="day">day</string>
+    <string name="month">month</string>
+    <string name="_2022">2022</string>
+    <string name="test">test</string>
+    <string name="archive">archive</string>
 </resources>

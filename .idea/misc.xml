@@ -3,11 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/drawable/ic_notes.xml" value="0.1295" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/drawable/test.xml" value="0.166" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/activity_main.xml" value="0.20104166666666667" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/fragment_calendar.xml" value="0.12917933130699089" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/fragment_checker.xml" value="0.22" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/fragment_month.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/fragment_week.xml" value="0.265625" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/item_check.xml" value="0.25" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/top_app_bar.xml" value="0.11875" />
+        <entry key="..\:/Users/AndreyAI/Desktop/android projects/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/menu/bottom_app_bar.xml" value="0.22" />
         <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/drawable/ic_calendar.xml" value="0.2390625" />
         <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/drawable/ic_checklist.xml" value="0.2390625" />
         <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/drawable/ic_shopping.xml" value="0.2353846153846154" />
-        <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/calendar_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/calendar_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/fragment_calendar.xml" value="0.21014492753623187" />
         <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/fragment_main.xml" value="0.22" />
+        <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/fragment_month.xml" value="0.21014492753623187" />
+        <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/layout/fragment_year.xml" value="0.18" />
         <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/menu/bottom_app_bar.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/User/Desktop/Diary_only for _Julia/Diary-only-for-Julia/app/src/main/res/menu/bottom_navigation.xml" value="0.10677083333333333" />
       </map>

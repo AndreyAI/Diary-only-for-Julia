@@ -8,7 +8,8 @@ import com.google.android.material.navigation.NavigationBarView
 import com.pet.diary.R
 import com.pet.diary.databinding.FragmentMainBinding
 import com.pet.diary.presentation.calendar.CalendarFragment
-
+import com.pet.diary.presentation.check.CheckerFragment
+import com.pet.diary.replaceFragment
 
 class MainFragment : Fragment(R.layout.fragment_main) {
 
@@ -16,22 +17,16 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.bottomNavigationView.background =
-            null // why work only dynamically? if xml not working
-
-        childFragmentManager.beginTransaction()
-            .add(R.id.fragmentContainer, CalendarFragment(), "calendar") // companion object
-           // .show(CalendarFragment())
-            .commit()
-
-
-
+        fragmentInit()
+        listenersInit()
     }
 
-    private fun listenersInit(){
+    private fun listenersInit() {
+
         binding.fab.setOnClickListener {
-            binding.bottomNavigationView.selectedItemId = R.id.calendar
+            binding.bottomNavigationView.selectedItemId =
+                R.id.calendar  // init bottom, delete freeze
+            replaceFragment(CalendarFragment(), R.id.fragmentContainer, CALENDAR)
         }
 
         binding.bottomNavigationView.setOnNavigationItemSelectedListener { item ->
@@ -39,6 +34,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                 NavigationBarView.LABEL_VISIBILITY_SELECTED
             when (item.itemId) {
                 R.id.checkList -> {
+                    replaceFragment(CheckerFragment(), R.id.fragmentContainer, CALENDAR)
                     true
                 }
                 R.id.shoppingList -> {
@@ -53,7 +49,41 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                 else -> false
             }
         }
+
+        binding.bottomNavigationView.setOnNavigationItemReselectedListener() { item ->
+            binding.bottomNavigationView.labelVisibilityMode =
+                NavigationBarView.LABEL_VISIBILITY_SELECTED
+            when (item.itemId) {
+                R.id.checkList -> {
+                    replaceFragment(CheckerFragment(), R.id.fragmentContainer, CALENDAR)
+                    true
+                }
+                R.id.shoppingList -> {
+                    true
+                }
+                R.id.habitsTracker -> {
+                    true
+                }
+                R.id.notes -> {
+                    true
+                }
+                else -> false
+            }
+        }
+
+
     }
 
+    private fun fragmentInit() {
+        binding.bottomNavigationView.background =
+            null// why work only dynamically? if xml not working
+        replaceFragment(CalendarFragment(), R.id.fragmentContainer, CALENDAR)
+//        childFragmentManager.beginTransaction()
+//            .add(R.id.fragmentContainer, CalendarFragment()) // companion object
+//            .commit()
+    }
 
+    companion object{
+        private const val CALENDAR = "calendar"
+    }
 }
