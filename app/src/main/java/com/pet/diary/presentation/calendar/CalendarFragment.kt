@@ -67,7 +67,6 @@ class CalendarFragment : Fragment(R.layout.fragment_calendar) {
     }
 
     companion object {
-        //        const val YEAR = "year"
         const val MONTH = "month"
         const val WEEK = "week"
         const val PERIOD_TYPE = "selected_list_type"
