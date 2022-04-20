@@ -2,15 +2,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/search"
-        android:icon="@drawable/ic_search"
-        app:showAsAction="always"
-        android:title="@string/search" />
+        android:id="@+id/active"
+        android:title="@string/active"
+        app:showAsAction="never" />
 
     <item
-        android:id="@+id/archive"
-        android:icon="@drawable/ic_archive"
-        android:title="@string/archive"
-        app:showAsAction="always" />
+        android:id="@+id/completed"
+        android:title="@string/completed"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/all"
+        android:title="@string/all"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/archived"
+        android:title="@string/archived"
+        app:showAsAction="never" />
 
 </menu>

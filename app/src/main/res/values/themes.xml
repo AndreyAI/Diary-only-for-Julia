@@ -15,6 +15,7 @@
         <!-- Customize your theme here. -->
         <item name="bottomAppBarStyle">@style/bottomBar</item>
         <item name="checkboxStyle">@style/Widget.App.CheckBox</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
     </style>
 
     <style name="bottomBar" parent="Widget.MaterialComponents.BottomAppBar.Colored">
@@ -57,6 +58,10 @@
     <style name="ThemeOverlay.App.CheckBox" parent="">
         <item name="colorOnSurface">@android:color/holo_green_dark</item>
         <item name="colorSecondary">@android:color/holo_green_light</item>
+    </style>
+
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_filter</item>
     </style>
 
 

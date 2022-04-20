@@ -15,4 +15,8 @@
     <string name="test">test</string>
     <string name="archive">archive</string>
     <string name="test_long">fjdgldsfg dsfgl jsdfljg sdflkjg sdlfjg lsdkfjg lksdfj gdslf jgdslf jgldsfjk glsdkjf glsdkfjg sldf jgsdlfkjg</string>
+    <string name="active">Active</string>
+    <string name="completed">Completed</string>
+    <string name="all">All</string>
+    <string name="archived">Archived</string>
 </resources>
