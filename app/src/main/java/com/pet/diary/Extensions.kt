@@ -16,7 +16,22 @@ fun <T : Fragment> T.replaceFragment(fragment: Fragment, containerId: Int, tag: 
         .commit()
 }
 
+fun <T : Fragment> T.replaceFragmentParent(fragment: Fragment, containerId: Int, tag: String) {
+    parentFragmentManager.beginTransaction()
+        .replace(containerId, fragment, tag)
+        .commit()
+}
+
 fun <T : Fragment> T.showFragment(fragment: Fragment, containerId: Int, tag: String) {
+    val ft = childFragmentManager.beginTransaction()
+    if (childFragmentManager.findFragmentByTag(tag)?.isAdded == true)
+        ft.show(childFragmentManager.findFragmentByTag(tag)!!)
+    else
+        ft.add(containerId, fragment, tag)
+    ft.commit()
+}
+
+fun <T : Fragment> T.showFragmentParent(fragment: Fragment, containerId: Int, tag: String) {
     val ft = childFragmentManager.beginTransaction()
     if (childFragmentManager.findFragmentByTag(tag)?.isAdded == true)
         ft.show(childFragmentManager.findFragmentByTag(tag)!!)

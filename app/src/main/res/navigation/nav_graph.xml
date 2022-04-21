@@ -32,4 +32,8 @@
             android:name="activePeriod"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/taskAddFragment"
+        android:name="com.pet.diary.presentation.check.TaskAddFragment"
+        android:label="TaskAddFragment" />
 </navigation>
