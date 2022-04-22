@@ -20,7 +20,7 @@ class CalendarFragment : Fragment(R.layout.fragment_calendar) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        fragmentInit()
+        //fragmentInit()
 
     }
 

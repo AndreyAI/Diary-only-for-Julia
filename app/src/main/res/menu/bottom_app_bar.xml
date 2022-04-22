@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/checkList"
+        android:id="@+id/checkerFragment"
         android:contentDescription="@string/checklist"
         android:icon="@drawable/ic_checklist"
         android:title="@string/checklist" />
 
     <item
-        android:id="@+id/shoppingList"
+        android:id="@+id/shoppingFragment"
         android:contentDescription="@string/shopping_list"
         android:icon="@drawable/ic_shopping"
         android:title="@string/shopping_list" />
@@ -20,13 +20,13 @@
         android:enabled="false"/>
 
     <item
-        android:id="@+id/habitsTracker"
+        android:id="@+id/habitsFragment"
         android:contentDescription="@string/habits_tracker"
         android:icon="@drawable/ic_habitstracker"
         android:title="@string/habits_tracker"/>
 
     <item
-        android:id="@+id/notes"
+        android:id="@+id/notesFragment"
         android:contentDescription="@string/notes"
         android:icon="@drawable/ic_notes"
         android:title="@string/notes" />

@@ -8,7 +8,6 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.pet.diary.R
 import com.pet.diary.data.Task
 import com.pet.diary.databinding.FragmentCheckerBinding
-import com.pet.diary.presentation.main.MainFragmentDirections
 import com.pet.diary.utils.autoCleared
 
 class CheckerFragment : Fragment(R.layout.fragment_checker) {
@@ -22,7 +21,7 @@ class CheckerFragment : Fragment(R.layout.fragment_checker) {
         initList()
         binding.fabAdd.setOnClickListener {
             // replaceFragment(TaskAddFragment(), R.id.fragmentContainer, ADD_TASK )
-            //findNavController().navigate(.actionMainFragmentToTaskAddFragment())
+            findNavController().navigate(CheckerFragmentDirections.actionCheckerFragmentToTaskAddFragment())
         }
         val list = (0..100).map {
             Task(

@@ -3,37 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/calendarFragment">
 
-    <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.pet.diary.presentation.main.MainFragment"
-        android:label="MainFragment"
-        tools:layout="@layout/fragment_main">
-        <action
-            android:id="@+id/action_mainFragment_to_calendarFragment"
-            app:destination="@id/calendarFragment" />
-    </fragment>
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.pet.diary.presentation.calendar.CalendarFragment"
         android:label="CalendarFragment"
-        tools:layout="@layout/fragment_calendar">
-        <action
-            android:id="@+id/action_calendarFragment_to_monthFragment"
-            app:destination="@id/monthFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/monthFragment"
-        android:name="com.pet.diary.presentation.calendar.month.MonthFragment"
-        android:label="MonthFragment"
-        tools:layout="@layout/fragment_month">
-        <argument
-            android:name="activePeriod"
-            app:argType="string" />
-    </fragment>
+        tools:layout="@layout/fragment_calendar"/>
     <fragment
         android:id="@+id/taskAddFragment"
         android:name="com.pet.diary.presentation.check.TaskAddFragment"
-        android:label="TaskAddFragment" />
+        android:label="TaskAddFragment"
+        tools:layout="@layout/fragment_task_add"/>
+    <fragment
+        android:id="@+id/checkerFragment"
+        android:name="com.pet.diary.presentation.check.CheckerFragment"
+        android:label="CheckerFragment"
+        tools:layout="@layout/fragment_checker">
+        <action
+            android:id="@+id/action_checkerFragment_to_taskAddFragment"
+            app:destination="@id/taskAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/habitsFragment"
+        android:name="com.pet.diary.presentation.habits.HabitsFragment"
+        android:label="HabitsFragment"
+        tools:layout="@layout/fragment_habits"/>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.pet.diary.presentation.notes.NotesFragment"
+        android:label="NotesFragment"
+        tools:layout="@layout/fragment_notes"/>
+    <fragment
+        android:id="@+id/shoppingFragment"
+        android:name="com.pet.diary.presentation.shopping.ShoppingFragment"
+        android:label="ShoppingFragment"
+        tools:layout="@layout/fragment_shopping"/>
 </navigation>

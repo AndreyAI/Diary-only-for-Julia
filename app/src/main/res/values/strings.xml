@@ -19,4 +19,6 @@
     <string name="completed">Completed</string>
     <string name="all">All</string>
     <string name="archived">Archived</string>
+    <string name="habits">Habits</string>
+    <string name="shopping">Shopping</string>
 </resources>
